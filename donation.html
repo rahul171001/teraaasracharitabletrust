@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tera Aasra Charitable Trust - Donation Page. Support our cause and make a difference.">
+    <meta name="keywords" content="charity, trust, donations, social welfare, community, Tera Aasra, donate">
+    <meta name="author" content="Tera Aasra Charitable Trust">
+    <title>Donate to Tera Aasra Charitable Trust</title>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .donation-page {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-section {
+            background: linear-gradient(135deg, #2c3e50, #16a085);
+            color: #fff;
+            padding: 60px 20px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .quote-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .quote-section p {
+            font-size: 1.5rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .qr-section {
+            margin-bottom: 40px;
+        }
+
+        .qr-section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .qr-section img {
+            max-width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .payment-options a {
+            display: flex;
+            align-items: center;
+            background: #16a085;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .payment-options a:hover {
+            background: #1abc9c;
+            transform: scale(1.05);
+        }
+
+        .payment-options a i {
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .contact-section {
+            background: #ecf0f1;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .contact-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .contact-icons a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 1.5rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            transform: scale(1.1);
+            color: #16a085;
+        }
+
+        .contact-icons a i {
+            margin-right: 15px;
+            font-size: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .quote-section h1 {
+                font-size: 2rem;
+            }
+
+            .quote-section p {
+                font-size: 1.2rem;
+            }
+
+            .qr-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .payment-options {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .payment-options a {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+
+            .contact-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .contact-icons a {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="donation-page">
+        <!-- Quote Section -->
+        <div class="quote-section">
+            <h1>Your Support Matters</h1>
+            <p>"No one has ever become poor by giving." – Anne Frank</p>
+        </div>
+
+        <!-- QR Code Section -->
+        <div class="qr-section">
+            <h2>Scan to Donate</h2>
+            <img src="data:image/png;base64,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" alt="Donation QR Code">
+        </div>
+
+        <!-- Payment Options Section -->
+        <div class="payment-options">
+            <a href="tez://upi/pay?pa=8740802013@ybl&pn=Tera%20Aasra%20Charitable%20Trust&mc=0000&mode=02&purpose=00" target="_blank">
+                <i class="fab fa-google-pay"></i>
+                Donate via GPay
+            </a>
+            <a href="paytmmp://pay?pa=8740802013@paytm&pn=Tera%20Aasra%20Charitable%20Trust&mc=0000&mode=02&purpose=00" target="_blank">
+                <i class="fas fa-wallet"></i>
+                Donate via Paytm
+            </a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-icons">
+                <a href="https://wa.me/918740802013" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp: +91 87408 02013
+                </a>
+                <a href="tel:+918740802013">
+                    <i class="fas fa-phone"></i>
+                    Call Us: +91 87408 02013
+                </a>
+                <a href="https://www.instagram.com/teraaasracharitabletrust/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    Instagram: Tera Aasra Charitable Trust
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    Facebook: Coming Soon
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
